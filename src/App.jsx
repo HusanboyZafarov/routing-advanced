@@ -26,7 +26,7 @@ function App() {
     if (id !== -1) {
       const items = originalPosts.filter((p) => p.genre === option.name);
 
-      setFiltered(items);
+      setFiltered(items)
 
       setFilter(id);
     } else {
