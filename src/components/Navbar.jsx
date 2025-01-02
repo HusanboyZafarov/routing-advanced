@@ -1,13 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Navbar = ({author}) => {
+const Navbar = ({ author }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <NavLink to="/" className="navbar-brand d-flex align-items-center">
           <span
-            className="bg-light text-dark rounded-circle d-inline-flex justify-content-center align-items-center"
+            className="bg-primary text-white rounded-circle d-inline-flex justify-content-center align-items-center"
             style={{ width: "32px", height: "32px" }}
           >
             B
@@ -41,17 +41,16 @@ const Navbar = ({author}) => {
           />
         </form>
 
-        {/* Profile Icon */}
         <div className="dropdown">
           <NavLink
             to="/user"
-            className="bg-light text-dark rounded-circle text-decoration-none d-inline-flex justify-content-center align-items-center"
+            className="bg-primary text-white rounded-circle text-decoration-none d-inline-flex justify-content-center align-items-center"
             id="dropdownUser"
             data-bs-toggle="dropdown"
             aria-expanded="false"
             style={{ width: "32px", height: "32px" }}
           >
-            {author.first_name.slice(0 , 1)}
+            {author.first_name.slice(0, 1)}
           </NavLink>
         </div>
       </div>
